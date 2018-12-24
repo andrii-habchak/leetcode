@@ -1,2 +1,2 @@
 # leetcode
-Solving of leetcode's problems
+Solving of [leetcode's](https://leetcode.com/) problems
