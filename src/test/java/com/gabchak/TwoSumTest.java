@@ -1,8 +1,9 @@
 package com.gabchak;
 
-import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 class TwoSumTest {
 
@@ -19,7 +20,7 @@ class TwoSumTest {
         int[] resultIndexes = {0, 1};
         int target = 9;
 
-        Assert.assertArrayEquals(resultIndexes, twoSum.twoSumBruteForce(inputArray, target));
+        assertArrayEquals(resultIndexes, twoSum.twoSumBruteForce(inputArray, target));
     }
 
     @Test
@@ -28,7 +29,7 @@ class TwoSumTest {
         int[] resultIndexes = {0, 1};
         int target = 6;
 
-        Assert.assertArrayEquals(resultIndexes, twoSum.twoSumBruteForce(inputArray, target));
+        assertArrayEquals(resultIndexes, twoSum.twoSumBruteForce(inputArray, target));
     }
 
     @Test
@@ -38,7 +39,7 @@ class TwoSumTest {
         int target = 7;
 
         int[] actuals = twoSum.twoSumBruteForce(inputArray, target);
-        Assert.assertArrayEquals(resultIndexes, actuals);
+        assertArrayEquals(resultIndexes, actuals);
     }
 
     @Test
@@ -47,6 +48,6 @@ class TwoSumTest {
         int[] resultIndexes = {0, 1};
         int target = 9;
 
-        Assert.assertArrayEquals(resultIndexes, twoSum.twoSumUseHashMap(inputArray, target));
+        assertArrayEquals(resultIndexes, twoSum.twoSumUseHashMap(inputArray, target));
     }
 }
